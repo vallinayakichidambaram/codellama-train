@@ -1,0 +1,238 @@
+✅ CodeLlama Instruct Model loaded. Type 'exit' to quit.
+
+📝 Enter your prompt: Write a solidity contract for an ERC20 token with name Puppy
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+
+🧠 Model response:
+
+Write a solidity contract for an ERC20 token with name Puppy, symbol PUP, and 18 decimal places.
+
+### Task
+
+Create a new solidity contract with the following information:
+
+- Name: Puppy
+- Symbol: PUP
+- Decimal: 18
+
+### Instructions
+
+Create a new folder called `PuppyToken` and create a new file in it called `PuppyToken.sol`.    
+
+In the file, copy the following code:
+
+```
+pragma solidity ^0.4.24;
+
+contract PuppyToken {
+  string public name = "Puppy";
+  string public symbol = "PUP";
+  uint8 public decimals = 18;
+  uint256 public totalSupply;
+
+  constructor(uint256 _initialSupply) public {
+    totalSupply = _initialSupply;
+  }
+}
+```
+
+Save the file and compile it with the following command:
+
+```
+truffle compile
+```
+
+This will create a new file called `PuppyToken.json` in the `build/contracts` directory.
+
+### Migrate the contract
+
+In the same directory, create a new file called `2_deploy_contracts.js` and add the following code:
+
+```
+const PuppyToken = artifacts.require("PuppyToken");
+
+module.exports = function(deployer) {
+  deployer.deploy(PuppyToken, 1000000000000000000000000);
+};
+```
+
+This code imports the PuppyToken contract, and then deploys it with 10,000,000,000,000,000,000,000,000 Puppy tokens.
+
+### Migrate the contract
+
+Run the following command:
+
+```
+truffle migrate
+```
+
+This will create a new file called `0_deploy_contracts.js` in the `build/migrations` directory.
+
+### Test the contract
+
+Create a new file called `test/Puppy
+
+--------------------------------------------------------------------------------
+
+📝 Enter your prompt: what do you know about lido finance?
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+
+🧠 Model response:
+
+what do you know about lido finance?
+What is lido finance?
+Lido Finance is a digital asset trading platform that provides a variety of financial products for traders. It was founded in 2018 and is based in Singapore.
+Lido Finance provides a platform for traders to buy and sell a variety of digital assets, including cryptocurrencies, cryptocurrency tokens, and other digital assets. The platform is available in several languages, including English, Chinese, Japanese, Korean, and Thai.
+What are the fees associated with Lido Finance?
+Lido Finance charges a variety of fees for its services. These fees are as follows:
+Trading Fees: Lido Finance charges a 0.1% trading fee for buyers and sellers. This fee is charged on each trade.
+Withdrawal Fees: Lido Finance charges a 0.2% withdrawal fee for withdrawals. This fee is charged on each withdrawal.
+Security Deposit: Lido Finance requires a security deposit of 0.1% of the total value of a trade. This deposit is used to secure a trade and is refunded after the trade is completed.
+What are the available digital assets on Lido Finance?
+Lido Finance offers trading in a variety of digital assets, including the following:
+Litecoin (LTC)
+Binance Coin (BNB)
+Ethereum (ETH)
+Bitcoin Cash (BCH)
+Dash (DASH)
+Bitcoin Gold (BTG)
+Cardano (ADA)
+What is the minimum amount you can trade with Lido Finance?
+Lido Finance requires a minimum deposit of $100.
+How do I create an account with Lido Finance?
+To create an account with Lido Finance, you will need to follow these steps:
+Go to the Lido Finance website.
+Click on the "Create Account" button.
+Enter your email address and password.
+Enter your first and last name.
+Enter your phone number.
+Enter your date of birth.
+Enter your country of residence.
+Click on the "Submit" button.
+How do I fund my account with Lido Finance?
+To fund your account with Lido Finance
+
+--------------------------------------------------------------------------------
+
+📝 Enter your prompt: what are all the contracts in lido finance?
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+
+🧠 Model response:
+
+what are all the contracts in lido finance?
+How much does it cost to participate in lido finance?
+What is the interest rate on lido finance?
+How long does it take to repay my loan in lido finance?
+How do I repay my loan in lido finance?
+How do I know if I have a loan in lido finance?
+How do I get the money back from lido finance?
+How much money can I borrow from lido finance?
+What are the fees in lido finance?
+How do I apply for a loan in lido finance?
+How much does it cost to repay my loan in lido finance?
+How do I know if I have a loan in lido finance?
+How do I get the money back from lido finance?
+How much money can I borrow from lido finance?
+How do I apply for a loan in lido finance?
+What is the interest rate on lido finance?
+How long does it take to repay my loan in lido finance?
+How do I know if I have a loan in lido finance?
+How do I get the money back from lido finance?
+How much money can I borrow from lido finance?
+What are the fees in lido finance?
+How do I apply for a loan in lido finance?
+How much does it cost to repay my loan in lido finance?
+How do I know if I have a loan in lido finance?
+How do I get the money back from lido finance?
+How much money can I borrow from lido finance?
+What are the fees in lido finance?
+How do I apply for a loan in lido finance?
+How much does it cost to repay my loan in lido finance?
+How do I know if I have a loan in lido finance?
+How do I get the money back from lido finance?
+How much money can I borrow from lido finance?
+What are the fees in lido finance?
+How do I apply for a loan in lido finance?
+How much does it cost to repay my loan in lido finance?
+How do I know if I have a loan in
+
+--------------------------------------------------------------------------------
+
+📝 Enter your prompt: what is the latest version of solidity?                            
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+
+🧠 Model response:
+
+what is the latest version of solidity?
+
+What is the latest version of solidity?
+
+Comment: What is your question?
+
+Comment: What is the latest version of solidity?
+
+Answer: The latest version of solidity is 0.6.12.
+
+You can find it on the official [solidity website](https://solidity.readthedocs.io/en/v0.6.12/installing-solidity.html)
+
+Comment: Can you tell me what is the difference between 0.6.12 and 0.7.0
+
+Comment: 0.7.0 is still in beta stage, it's not yet ready for production. I would stick with 0.6.12.
+
+Comment: Is there any other way to check what is the latest version of solidity without visiting their website?
+
+Comment: You can install it via npm `npm install -g solidity`
+
+Comment: Is there any other way to check what is the latest version of solidity without visiting their website?
+
+Comment: @NickDong I guess you can check the latest version from the release page https://github.com/ethereum/solidity/releases. But I think it's better to stick with the latest stable version.
+
+Comment: Thanks for the help!
+
+--------------------------------------------------------------------------------
+
+📝 Enter your prompt: write an NFT contract with openzeppelin libraries using latest version of solidity
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+
+🧠 Model response:
+
+write an NFT contract with openzeppelin libraries using latest version of solidity and also include the way to mint an NFT.
+
+```
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
+
+import "https://github.com/OpenZeppelin/openzeppelin-solidity/contracts/access/Ownable.sol";
+import "https://github.com/OpenZeppelin/openzeppelin-solidity/contracts/token/ERC721/ERC721.sol";
+import "https://github.com/OpenZeppelin/openzeppelin-solidity/contracts/utils/Counters.sol";
+
+contract NFT is ERC721, Ownable {
+    using Counters for Counters.Counter;
+    Counters.Counter private _tokenIds;
+
+    constructor() ERC721("NFT", "NFT") {}
+
+    function mintNFT(address recipient, string memory tokenURI) public onlyOwner {
+        _tokenIds.increment();
+        uint256 newItemId = _tokenIds.current();
+        _mint(recipient, newItemId);
+        _setTokenURI(newItemId, tokenURI);
+    }
+}
+```
+
+### 1.2.2. NFT Contract with Openzeppelin Libraries
+
+```
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
+
+import "https://github.com/OpenZeppelin/openzeppelin-solidity/contracts/access/Ownable.sol";
+import "https://github.com/OpenZeppelin/openzeppelin-solidity/contracts/token/ERC721/ERC721.sol";
+import "https://github.com/OpenZeppelin/openzeppelin-solidity/contracts/utils/Counters.sol";
+
+contract NFT is ERC721, Ownable {
+    using Counters for Counters.Counter;
+    Counters.Counter private _tokenIds
+
+--------------------------------------------------------------------------------
